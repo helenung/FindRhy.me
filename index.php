@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<title>FindRhy.me</title>
 		
-		<link rel="icon" type="image/png" href="img/favicon-01.jpg" />
+		<link rel="icon" type="image/png" href="img/favicon-01.png" />
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
@@ -54,6 +54,7 @@
 			</div>
 			
 		</div>
+		<div class="checkMap"><p>Check out the map below to see locations of places where people have uploaded their poems!</p></div>
 		 <div id="map-canvas"></div>
 		<div class="addPoem">
 		
@@ -106,6 +107,8 @@
 			</form> -->
 
 		</div>
+
+
 
         <div class="footer">
             <h3>Created by Walter Ceder, Luke Jin-li Chang, Jenny Chen, & Helen Ung.</h3>

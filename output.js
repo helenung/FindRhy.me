@@ -24,7 +24,7 @@ function showPosition(position) {
             index += 1;
         });
         $('#loading').hide();
-        //loadDemo(lat, lon);
+        loadDemo(lat, lon);
         if (index == 0) {
             items.push("<li class='poemError' id='output'>No results near here, you can be the first to <a href='index.php'>write about this location.</a></li>");
         }
@@ -42,31 +42,52 @@ function showPosition(position) {
 
 function loadDemo(lat, lng){
     console.log("get demo");
-    /*var geocoder = new google.maps.Geocoder();
+    var geocoder = new google.maps.Geocoder();
     var latlng = new google.maps.LatLng(lat, lng);
-    geocoder.geocode({'latLng': latlng}, function(results, status) {*/
-        $.get('zillow.php', function(data){
-            medianIncome(data);
-        });
-        /*if(status == google.maps.GeocoderStatus.OK){
-            console.log(JSON.stringify(results));
+    geocoder.geocode({'latLng': latlng}, function(results, status) {
+        if(status == google.maps.GeocoderStatus.OK){
+            //console.log(JSON.stringify(results));
             for(var i =0; i < results.length; i++){
                 if(results[i].types[0] == 'postal_code'){
                     var zip = results[i].address_components[0].long_name;
-                    console.log(zip);
                 }
             }
+            if(zip != null){
+                $.get('zillow.php?zip=' + zip, function(data){
+                    medianIncome(data);
+                });
+            }
         }else{
-            alert('Geocoder failed due to: ' + status);
-        }*/
-    //});
+            console.log('Geocoder failed due to: ' + status);
+        }
+    });
 }
 
 function medianIncome(xml){
-    /*xmlDoc = $.parseXML( xml ),
-        $xml = $( xmlDoc ),
-        $title = $xml.find( "Median Household Income" );
-    console.log($title.text());*/
+    var xmlDoc = $.parseXML( xml );
+    var elems = xmlDoc.getElementsByTagName("attribute");
+    for(var i =0; i < elems.length; i++){
+        if(elems[i].getElementsByTagName("name")[0].innerHTML == "Median Household Income") {
+            var value = elems[i].getElementsByTagName("values")[0].firstChild.firstChild;
+            if (value.innerHTML) {
+                var inc = Math.round(parseInt(value.innerHTML) * 100) / 100;
+                console.log(inc);
+                $('#income').text('The median income for this area is ' + inc + " USD");
+                $('#income').show();
+            }
+        }else if(elems[i].getElementsByTagName("name")[0].innerHTML == "Average Commute Time (Minutes)"){
+            var value = elems[i].getElementsByTagName("values")[0].firstChild.firstChild;
+            if(value.innerHTML){
+                var com = Math.round(parseInt(value.innerHTML) * 100) / 100;
+                console.log(com);
+                $('#commute').text("The average commute time for this area is " + com + " minutes");
+                $('#commute').show();
+            }
+        }
+    }
+    for(var i =0; i < elems.length; i++){
+
+    }
 
 }
 

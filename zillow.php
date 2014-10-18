@@ -9,7 +9,7 @@
 //get demographic data from zillow api, given zip code
 
 $data = file_get_contents('http://www.zillow.com/webservice/GetDemographics.htm?zws-id=X1-ZWz1dxzeut9qtn_86zet&zip=98105');
-$p = xml_parser_create();
-xml_parse_into_struct($p, $data, $vals, $index);
+//$p = xml_parser_create();
+//xml_parse_into_struct($p, $data, $vals, $index);
 
-print_r($index);
+print $data;

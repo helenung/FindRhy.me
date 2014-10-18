@@ -6,7 +6,7 @@ body {
 	margin: 0px;
 
 	font-family: 'Lato', sans-serif;
-	color:#FFF;
+	color:#888;
 
 
 }
@@ -25,11 +25,7 @@ p {
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;
 	position: relative;
-
 	text-align: center;
-
-
-
 }
 
 h1 {
@@ -57,9 +53,11 @@ h3 {
 
 }
 
+.checkMap {
+	margin-bottom: 1em;
+}
+
 .addPoem {
-	padding: 2em 0em 2em 0em;
-	background-image: url('img/tri2.svg');
 	text-align: center;
 }
 
@@ -67,6 +65,9 @@ h3 {
 	padding: 2em 0em 2em 0em;
 	background-image: url('img/tri2.svg');
 	text-align: center;
+	background-size: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .background {
@@ -94,7 +95,6 @@ button[disabled=disabled], button:disabled {
 }
 
 .submit {
-		
 	background: none;
 	border-radius: none;
 	border: 2px solid;
@@ -109,8 +109,8 @@ button[disabled=disabled], button:disabled {
 	text-transform: uppercase;
 	font-size: 1.4em;
 	margin-top: 2em;
-		
-	}
+}
+
 button {
 	background: none;
 	border-radius: none;
@@ -126,12 +126,12 @@ button {
 	text-transform: uppercase;
 	font-size: 1.4em;
 	margin-top: 1em;
-
-		
 }
+
 .center {
 	text-align: center;
 }
+
 .author {
 	margin-bottom: 2em;
 	margin-top: .5em;

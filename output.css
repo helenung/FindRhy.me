@@ -6,7 +6,7 @@ body {
 	margin: 0px;
 
 	font-family: 'Lato', sans-serif;
-	color:#FFF;
+	color:#888;
 
 
 }
@@ -67,6 +67,9 @@ h3 {
 	padding: 2em 0em 2em 0em;
 	background-image: url('img/tri.svg');
 	text-align: center;
+	background-size: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
 
 }
 
