@@ -6,23 +6,25 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta charset="utf-8" />
 		<title>FindRhy.me</title>
-		<link rel="icon" href="" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-		<!-- Latest compiled and minified CSS -->
+		<link rel="icon" type="image/png" href="img/favicon-01.jpg">
+		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-		<link href="output.css" type="text/css" rel="stylesheet" />
-		<!-- Latest compiled and minified JavaScript -->
+<link href="output.css" type="text/css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
 		<script src="location.js" type="text/javascript"></script>
-		
+
+
 		<script src="output.js"></script>
-		<link rel="icon" type="image/png" href="img/favicon-01.jpg">
+		
+		
 	</head>
 
 	<body>
@@ -31,6 +33,10 @@
 			<h1>Poems Near You</h1>
 			<h2>DISCOVER . CREATE . SHARE</h2>
 		</div>
+        <div>
+           <p> The median income for this area is 44512.01 USD.</p>
+        </div>
+        <hr />
 		<div id="map">
 		</div>
 		<div class="search">

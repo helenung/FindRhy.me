@@ -16,21 +16,37 @@ app.controller('indexCtrl', ['$scope', function($scope){
         }
     }
 
-    $scope.sendPoem = function(){
-        getLocation($scope.send);
+    $scope.clearForm = function(){
+        $scope.success = false;
+
+        //$scope.addPoem.$setPristine();
+        //$scope.$apply();
+    };
+
+    $('#closeModal').click(function(){
+        $scope.clearForm();
+    });
+    $('#openModal').click(function(){
+        $scope.clearForm();
+    });
+
+    $scope.sendPoem = function(form){
+        form.$setPristine();
+        getLocation(send);
     };
 
     $scope.getPoems = function(){
         getLocation(getp);
     };
 
-    $scope.send = function(position){
+    function send(position){
         $scope.lat = position.coords.latitude;
         $scope.long = position.coords.longitude;
         $.post('input.php', {"lat":$scope.lat, "long":$scope.long, "submission": $scope.submission, "author": $scope.author}, function(data){
-            $scope.success = true;
+            $scope.success= true;
             $scope.$apply();
-            console.log("success");
+            $('#submission').val('');
+            $('#author').val('');
         });
     }
 
