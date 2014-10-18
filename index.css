@@ -4,7 +4,7 @@
 body {
 	background-color: white;
 	margin: 0px;
-	font-size: 100%;
+
 	font-family: 'Lato', sans-serif;
 	color:#888;
 
@@ -12,7 +12,7 @@ body {
 }
 p {
 	text-align: center;
-	font-size: 130%;
+	font-size: 200%;
 	font-weight: 300;
 }
 
@@ -34,14 +34,14 @@ p {
 h1 {
 	color:#FFF;
 	font-weight: 100;
-	font-size: 200%;
+	font-size: 300%;
 	
 }
 
 h2 {
 	color:#FFF;
 	font-weight: 100;
-	 font-size: 70%;
+	 font-size: 150%;
 	 letter-spacing: 10px;
 }
 
@@ -65,7 +65,21 @@ h2 {
 	width: 15%;
 }
 
-
+button[disabled=disabled], button:disabled {
+	background: none;
+	border-radius: none;
+	border: 2px solid;
+	border-color: #DB2929;
+	color: #DB2929;
+	cursor: pointer;
+	display: inline-block;
+	padding: 0.90em 1.2em;
+	letter-spacing: 1px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.4em;
+}
 
 .submit {
 		
@@ -112,5 +126,9 @@ button {
 	font-size: 100%;
 }
 
+#map-canvas {
+  width: 100%;
+  height: 600px;
+}
 
 
