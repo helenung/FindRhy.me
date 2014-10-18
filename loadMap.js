@@ -18,7 +18,11 @@ function setOpts(position){
     var mobile = window.mobilecheck();
 
   var mapOptions = {
+<<<<<<< HEAD
     zoom: 15,
+=======
+    zoom: 14,
+>>>>>>> FETCH_HEAD
     center: new google.maps.LatLng(position.coords.latitude,position.coords.longitude),
       //on mobile: should not be able to drag
       //on desktop: should not be able to scroll (so user can scroll down the page)
