@@ -111,7 +111,7 @@
 
 
         <div class="footer">
-        	<p class="foot">FindRhy.me Created By</p>
+        	<p>FindRhy.me Created By</p>
             <div class="row">
             	<div class="col-md-3">WALTER CEDER</div>
             	<div class="col-md-3">LUKE JIN LI CHANG</div>

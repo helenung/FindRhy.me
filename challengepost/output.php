@@ -46,21 +46,10 @@
 
 			</form>
 		</div>
-		 <div class="footer">
-        	<p class="foot">FindRhy.me Created By</p>
-            <div class="row">
-            	<div class="col-md-3">WALTER CEDER</div>
-            	<div class="col-md-3">LUKE JIN LI CHANG</div>
-            	<div class="col-md-3">JENNY CHEN</div>
-            	<div class="col-md-3">HELEN UNG</div>
-            </div>
-            <div class="row">
-            	<div class="col-md-3 role">Developer</div>
-            	<div class="col-md-3 role">Developer</div>
-            	<div class="col-md-3 role">UX Designer & Developer</div>
-            	<div class="col-md-3 role">Project Manager & Developer</div>
-            </div>
-        </div>
+		<div class="footer">
+			<h3>Created by Walter Ceder, Luke Jin-li Chang, Jenny Chen, & Helen Ung.</h3>
+			DubHacks 2014 
+		</div>
 		
 	</body>
 </html>

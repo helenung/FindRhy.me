@@ -191,6 +191,24 @@ text-align: center;
 	color:#9f8186;;
 }
 
+.col-md-3{
+	color:#FFF;
+	font-weight: 300;
+	font-size: 150%;
+
+}
+.role{
+	color:#780a3f;
+	font-weight: 400;
+	font-size: 100%;
+}
+
+.foot {
+	font-size: 100%;
+	color:#FFF;
+	margin-bottom: 1em;
+}
+
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
